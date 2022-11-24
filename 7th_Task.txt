@@ -1,0 +1,64 @@
+class Movie{
+    constructor (title,studio,rating)
+    {
+        this.title=title;
+        this.studio=studio;
+        this.rating=rating;
+    }
+}
+
+let ans = new Movie('Casino Royale','Eon Productions','PG13');
+console.log(ans.getPG);
+
+
+
+class Movie{
+    constructor (title,studio,rating)
+    {
+        this.title=title;
+        this.studio=studio;
+        this.rating=rating;
+    }
+  //getMethod
+    get getPG() {
+    return this.ansPG();
+  }
+  // Method
+    ansPG() {
+    return "the rating is  " + this.rating;
+  }
+ 
+}
+
+let ans = new Movie('Casino Royale','Eon Productions','PG13');
+console.log(ans.getPG);
+
+
+class Person{
+    String fname=,
+    String lname,
+    var age,
+    var dob,
+    let height,
+    let weight
+}
+
+
+class Uber {
+  constructor(dist,rate) {
+    this.dist = dist;
+    this.rate = rate;
+  }
+  
+  get data() {
+    return this.Bill();
+  }
+
+  Bill() {
+    return this.dist * this.rate;
+  }
+}
+
+const tot = new Uber(11, 32);
+
+console.log(tot.data);
